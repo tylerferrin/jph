@@ -1,0 +1,92 @@
+body {
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.index-wrap {
+  /*background-image: url('../img/backexample.jpg');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+a {
+  color: black;
+  transition: .5s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+ul {
+  padding: 0;
+  display: inline-block;
+}
+
+
+header h3 {
+  display: block;
+  text-align: left;
+}
+
+/* MENU STYLES */
+
+#camera_menu_click {
+  display: block;
+  margin: 20px 0 10px 0;
+  padding-right: 25px;
+  height: 37.5px;
+  float: right;
+}
+
+#camera_menu_click:hover {
+  cursor: pointer;
+}
+
+#menu_display {
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 500;
+  background-color: black;
+  opacity: .95;
+  color: white;
+  position: absolute;
+}
+
+ol#menu {
+  padding: 0;
+  display: inline-block;
+}
+
+ol#menu li {
+  display: inline-block;
+  padding: 25px 45px;
+}
+
+ol#menu li a {
+  color: cornsilk;
+}
+
+#menu_close {
+  display: block;
+  margin: 20px 0 10px 0;
+  padding-right: 25px;
+
+  height: 37.5px;
+  float: right;
+}
+
+#menu_close:hover {
+  cursor: pointer;
+}
+
+.menu-row {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
