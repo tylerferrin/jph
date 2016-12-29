@@ -1,5 +1,5 @@
 body {
-  color: black;
+  color: cornsilk;
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -10,8 +10,12 @@ body {
   height: 100vh;
 }
 
+header h1 {
+  font-size: 5rem;
+}
+
 a {
-  color: black;
+  color: white;
   transition: .5s;
 }
 
@@ -67,7 +71,8 @@ ol#menu li {
 }
 
 ol#menu li a {
-  color: cornsilk;
+  color: white;
+  font-size: 4rem;
 }
 
 #menu_close {
@@ -89,4 +94,28 @@ ol#menu li a {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+.photo {
+  height: calc(100vh - 100px)
+}
+
+/* ---- PEOPLE . HTML STYLINGS --*/
+
+.people-wrap a {
+  color: black;
+}
+
+.people-wrap div.container,
+.people-wrap div.col-sm-12 {
+  padding: 0;
+}
+
+.people-wrap {
+  background: lightgray;
+  height: 100vh;
+}
+
+.people {
+  margin-top: 50px;
 }
