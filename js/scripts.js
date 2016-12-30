@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 
-  $(".loader").fadeOut("slow");
+  $(".loader").fadeOut(2000);
 
   $(".index-wrap").backstretch([
     "img/back2.jpg",
