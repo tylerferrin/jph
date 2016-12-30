@@ -351,6 +351,23 @@ img.mail:hover {
   cursor: pointer;
 }
 
+.about-wrap h4 {
+  display: inline-block;
+  padding-top: 25px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  color: white;
+}
+
+ul#feature-link {
+  color: white;
+  list-style: none;
+}
+
+ul#feature-link li {
+  padding: 8px 0;
+}
+
 .loader {
 	position: fixed;
 	left: 0px;
