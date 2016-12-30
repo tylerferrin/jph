@@ -1,19 +1,28 @@
 body {
   color: cornsilk;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Raleway', sans-serif;
   font-smoothing: antialiased;
 }
 
 .index-wrap {
-  /*background-image: url('../img/backexample.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  position: abolute;
+  overflow: hidden;
 }
 
-header h1 {
-  font-size: 5rem;
+.container-fluid {
+  padding: 0;
 }
+
+
+
+header h1 {
+  display: inline-block;
+  font-size: 5rem;
+  z-index: 5000;
+  padding: 0;
 
 a {
   color: white;
@@ -22,7 +31,8 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: red;
+  color: #81f1e3;
+  opacity: .5;
 }
 
 ul {
@@ -39,7 +49,7 @@ header h3 {
 /* MENU STYLES */
 
 #camera_menu_click {
-  display: block;
+  display: inline-block;
   margin: 20px 0 10px 0;
   padding-right: 25px;
   height: 37.5px;
@@ -51,29 +61,32 @@ header h3 {
 }
 
 #menu_display {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: none;
   z-index: 500;
   background-color: black;
-  opacity: .95;
+  opacity: .85;
   color: white;
-  position: absolute;
+  position: fixed;
 }
 
 ol#menu {
   padding: 0;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 ol#menu li {
-  display: inline-block;
-  padding: 25px 45px;
+  display: block;
 }
 
 ol#menu li a {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
+  position: relative;
+  right: 5px;
 }
 
 #menu_close {
@@ -90,11 +103,12 @@ ol#menu li a {
 }
 
 .menu-row {
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
+  padding-left: 0;
 }
 
 .photo {
@@ -104,12 +118,11 @@ ol#menu li a {
 /* ---- PEOPLE . HTML STYLINGS --*/
 
 .people-wrap a {
-  color: red;
-  opacity: .75;
+  color: white;
 }
 
 .people-wrap a:hover {
-  opacity: 1;
+  color: #81f1e3;
 }
 
 .people-wrap div.col-sm-12 {
@@ -129,7 +142,7 @@ ol#menu li a {
 }
 
 .photo1 {
-  background-color: rgba(255,0,0, .75);
+  background-color: white;
   padding: 25px 25px;
 }
 
@@ -145,11 +158,12 @@ ol#menu li a {
 
 .people {
   margin-top: 25px;
+  position: relative;
 }
 
 .people-wrap button.slick-next:before,
 .people-wrap button.slick-prev:before {
-  color: red;
+  color: white;
 }
 
 
@@ -262,6 +276,33 @@ ol#menu li a {
   height: 100vh;
 }
 
+.about-wrap .row-about {
+  margin-top: 50px;
+}
+
+.about-wrap h3:nth-child(2) {
+  margin-top: 25px;
+  display: inline-block;
+}
+.about-wrap h3,
+.about-wrap h4 {
+  margin: 0;
+}
+
+.about-wrap h6 {
+  margin-top: 50%;
+}
+
+.about-wrap div.col-xs-12,
+.about-wrap div.container-fluid,
+.about-wrap div.container {
+  padding: 0;
+}
+
+.about-wrap #camera_menu_click {
+  display: inline-block;
+}
+
 .about-wrap a {
   color: white;
 }
@@ -274,6 +315,41 @@ ol#menu li a {
   padding: 0;
 }
 
-.about-wrap h4 {
-  margin-top: 50px;
+.about-wrap div.col-xs-6.jrock {
+
+  height: 75vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  ol#menu li a {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  ol#menu li {
+    padding-left: 25px;
+  }
+
+  .people {
+    margin: 0 25px;
+  }
+
+  #menu_display {
+    padding: 0;
+  }
+
 }
