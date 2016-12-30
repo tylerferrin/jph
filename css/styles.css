@@ -64,6 +64,7 @@ header h3 {
 
 #camera_menu_click:hover {
   cursor: pointer;
+  opacity: .65;
 }
 
 #menu_display {
@@ -335,6 +336,19 @@ ol#menu li a {
 .about-wrap div.col-sm-6.jrock {
   padding: 0;
   height: 75vh;
+}
+
+img.mail {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -50px;
+  right: 27px;
+  height: 35px;
+}
+
+img.mail:hover {
+  cursor: pointer;
 }
 
 .loader {
