@@ -306,12 +306,18 @@ ol#menu li a {
 
 
 
-/*.about-wrap div.col-xs-12 {
+.about-wrap div.container,
+.about-wrap .col-sm-6 {
   padding: 0;
-}*/
+}
 
 .about-wrap #camera_menu_click {
   display: inline-block;
+}
+
+.about-wrap p {
+  color: white;
+  padding-right: 25px;
 }
 
 .about-wrap a {
@@ -343,7 +349,7 @@ ol#menu li a {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
   ol#menu li {
     /*right: 0;
@@ -373,6 +379,14 @@ ol#menu li a {
 
   div.col-xs-6 {
     padding: 0;
+  }
+
+  .about-wrap p {
+    position: relative;
+    font-size: 1.7rem;
+    padding: 0;
+    top: 15px;
+
   }
 
 
