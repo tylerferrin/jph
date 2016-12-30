@@ -3,8 +3,6 @@
 
 $(document).ready(function() {
 
-  $(".loader").fadeOut(2000);
-
   $(".index-wrap").backstretch([
     "img/back2.jpg",
     "img/back1.jpg",
@@ -39,5 +37,8 @@ $(document).ready(function() {
       $("#camera_menu_click").fadeIn(450);
     });
   });
+
+
+  $(".loader").fadeOut(500);
 
 });
