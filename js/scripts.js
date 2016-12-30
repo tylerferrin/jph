@@ -39,6 +39,6 @@ $(document).ready(function() {
   });
 
 
-  $(".loader").fadeOut(500);
+  $(".loader").fadeOut(1000);
 
 });
