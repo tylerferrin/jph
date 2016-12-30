@@ -15,12 +15,9 @@ body {
   overflow: hidden;
 }
 
-.container-fluid {
-  padding: 0;
-}
 
-div.container {
-  padding: 0;
+div.col-xs-12 {
+  display: block;
 }
 
 
@@ -89,6 +86,10 @@ ol#menu {
 
 ol#menu li {
   display: block;
+  padding-top: 10px;
+  position: relative;
+  text-align: right;
+  left: 10px;
   /*padding-left: 25px;*/
 }
 
@@ -298,15 +299,16 @@ ol#menu li a {
   margin: 0;
 }
 
-.about-wrap h6 {
-  margin-top: 50%;
+.about-wrap h3:nth-child(4) {
+  padding-bottom: 10px;
+  border-bottom: 4px solid white;
 }
 
-.about-wrap div.col-xs-12,
-.about-wrap div.container-fluid,
-.about-wrap div.container {
+
+
+/*.about-wrap div.col-xs-12 {
   padding: 0;
-}
+}*/
 
 .about-wrap #camera_menu_click {
   display: inline-block;
@@ -324,8 +326,8 @@ ol#menu li a {
   padding: 0;
 }
 
-.about-wrap div.col-xs-6.jrock {
-
+.about-wrap div.col-sm-6.jrock {
+  padding: 0;
   height: 75vh;
 }
 
@@ -340,20 +342,22 @@ ol#menu li a {
 }
 
 
-@media screen and (max-width: 600px) {
-  ol#menu li a {
-    color: white;
-    font-size: 2rem;
-  }
-}
 
 @media screen and (max-width: 800px) {
 
-
   ol#menu li {
-    right: 0;
-    padding-left: 50px;
+    /*right: 0;
+    /*padding-left: 50px;
+    padding-top: 15px*/
+    position: relative;
+    text-align: right;
+    left: 50px;
   }
+
+  ol#menu li a {
+    color: white;
+    font-size: 2.5rem;
+    }
 
   .people {
     margin: 0 35px;
@@ -362,5 +366,14 @@ ol#menu li a {
   #menu_display {
     padding: 0;
   }
+/*
+  .about-wrap {
+    padding: 0 8%;
+  }*/
+
+  div.col-xs-6 {
+    padding: 0;
+  }
+
 
 }
