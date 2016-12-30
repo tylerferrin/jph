@@ -23,7 +23,9 @@ $(document).ready(function() {
 
   $("#camera_menu_click").click(function() {
     $("#camera_menu_click").fadeOut(450, function() {
+      $("#menu_display").fadeIn(function() {
       $("#menu_display").fadeIn(450);
+      });
     });
   });
 
