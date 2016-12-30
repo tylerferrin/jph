@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
   $(".index-wrap").backstretch([
@@ -12,19 +13,16 @@ $(document).ready(function() {
   });
 
   $(".people").slick({
-    adaptiveHeight: true,
-    autoplay: false,
-    dots: true,
-    slidesToScroll: 2,
-    slidesToShow: 2,
-
-
+    variableWidth: true,
+    autoplay: true,
+    centerMode: true,
+    autoplaySpeed: 5000,
   });
 
 
 
   $("#camera_menu_click").click(function() {
-    $("div.nav-row").fadeOut(450, function() {
+    $("#camera_menu_click").fadeOut(450, function() {
       $("#menu_display").fadeIn(450);
     });
   });
@@ -32,7 +30,7 @@ $(document).ready(function() {
 
   $("#menu_close").click(function() {
     $("#menu_display").fadeOut(450, function() {
-      $("div.nav-row").fadeIn(450);
+      $("#camera_menu_click").fadeIn(450);
     });
   });
 

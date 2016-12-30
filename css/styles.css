@@ -1,6 +1,7 @@
 body {
   color: cornsilk;
   font-family: 'Libre Baskerville', serif;
+  font-smoothing: antialiased;
 }
 
 .index-wrap {
@@ -97,25 +98,182 @@ ol#menu li a {
 }
 
 .photo {
-  height: calc(100vh - 100px)
+  height: 75vh;
 }
 
 /* ---- PEOPLE . HTML STYLINGS --*/
 
 .people-wrap a {
-  color: black;
+  color: red;
+  opacity: .75;
 }
 
-.people-wrap div.container,
+.people-wrap a:hover {
+  opacity: 1;
+}
+
 .people-wrap div.col-sm-12 {
   padding: 0;
 }
 
 .people-wrap {
-  background: lightgray;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
+.photo img {
+  height: 100%;
+  width: auto;
+}
+
+.photo1 {
+  background-color: rgba(255,0,0, .75);
+  padding: 25px 25px;
+}
+
+.photo1 img {
+  margin: 0 auto;
+}
+.photo2 {
+  background: url('../img/speckles.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 25px;
+}
+
 .people {
+  margin-top: 25px;
+}
+
+.people-wrap button.slick-next:before,
+.people-wrap button.slick-prev:before {
+  color: red;
+}
+
+
+/* ---- PLACE . HTML STYLINGS --*/
+
+.place-wrap {
+  background-color: #ff7f7f;
+  height: 100vh;
+}
+
+.place-wrap a {
+  color: blue;
+  opacity: .65;
+}
+
+.place-wrap a:hover {
+  opacity: 1;
+}
+
+.place-wrap div.col-sm-12 {
+  padding: 0;
+}
+
+.place-wrap button.slick-next:before,
+.place-wrap button.slick-prev:before {
+  color: blue;
+}
+
+.place-wrap .photo2 {
+  background: blue;
+
+  background-color: blue;
+}
+
+.place-wrap .photo1 {
+  background-color: rgba(0,0,255, .65);
+}
+
+/* ---- THING . HTML STYLINGS --*/
+
+
+.thing-wrap {
+  background-color: white;
+  height: 100vh;
+}
+
+.thing-wrap a {
+  color: rgb(0,153,0);
+  opacity: .65;
+}
+
+.thing-wrap a:hover {
+  opacity: 1;
+}
+
+.thing-wrap div.col-sm-12 {
+  padding: 0;
+}
+
+.thing-wrap button.slick-next:before,
+.thing-wrap button.slick-prev:before {
+  color: rgb(0,153,0);
+}
+
+.thing-wrap .photo2 {
+  background: green;
+}
+
+.thing-wrap .photo1 {
+  background-color: rgba(0,153,0, .65);
+}
+
+/* ---- CLIENT . HTML STYLINGS --*/
+
+
+.client-wrap {
+  background-color: lightgrey;
+  height: 100vh;
+}
+
+.client-wrap a {
+  color: rgb(0,0,0);
+}
+
+.client-wrap a:hover {
+  opacity: .65;
+}
+
+.client-wrap div.col-sm-12 {
+  padding: 0;
+}
+
+.client-wrap button.slick-next:before,
+.client-wrap button.slick-prev:before {
+  color: rgb(0,0,0);
+}
+
+.client-wrap .photo2 {
+  background: black;
+}
+
+.client-wrap .photo1 {
+  background-color: rgba(0,0,0, .65);
+}
+
+/* ---- ABOUT . HTML STYLINGS --*/
+
+.about-wrap {
+  background-color: black;
+  height: 100vh;
+}
+
+.about-wrap a {
+  color: white;
+}
+
+.about-wrap a:hover {
+  opacity: red;
+}
+
+.about-wrap div.col-sm-12 {
+  padding: 0;
+}
+
+.about-wrap h4 {
   margin-top: 50px;
 }

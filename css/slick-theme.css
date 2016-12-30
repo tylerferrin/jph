@@ -33,6 +33,7 @@
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    transform: rotate(90deg);
 
     cursor: pointer;
 
@@ -88,7 +89,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: 'PREVIOUS';
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +107,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: 'NEXT';
 }
 [dir='rtl'] .slick-next:before
 {
