@@ -7,9 +7,9 @@ $(document).ready(function() {
   $(".index-wrap").backstretch([
     "img/back2.jpg",
     "img/back1.jpg",
-    "img/back3.jpg",
-    "img/back4.jpg",
-    "img/back5.jpg"
+    "img/back3.JPG",
+    "img/back4.JPG",
+    "img/back5.JPG"
   ], {
     duration: 5000,
     fade: 500
