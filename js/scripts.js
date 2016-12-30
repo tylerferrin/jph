@@ -1,5 +1,9 @@
 
+
+
 $(document).ready(function() {
+
+  $(".loader").fadeOut("slow");
 
   $(".index-wrap").backstretch([
     "img/back2.jpg",
