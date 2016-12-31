@@ -4,7 +4,8 @@ html {
 }
 body {
   font-family: 'Raleway', sans-serif;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 .index-wrap {
@@ -25,6 +26,7 @@ div.col-xs-12 {
 header h1 {
   display: inline-block;
   font-size: 5rem;
+  font-style: italic;
   z-index: 5000;
   padding-left: 25px;
   margin-bottom: 25px;
@@ -36,9 +38,9 @@ a {
 }
 
 a:hover {
+  color: white;
   text-decoration: none;
-  color: #81f1e3;
-  opacity: .5;
+  opacity: .65;
 }
 
 ul {
@@ -288,7 +290,7 @@ ol#menu li a {
 }
 
 .about-wrap .row-about {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .about-wrap h3:nth-child(2) {
@@ -351,11 +353,25 @@ img.mail:hover {
   cursor: pointer;
 }
 
+img.social {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  height: 35px;
+  display: inline-block;
+}
+
+.social-row {
+  position: relative;
+  top: -30px;
+  padding: 0;
+}
+
 .about-wrap h4 {
   display: inline-block;
   padding-top: 25px;
   border-bottom: 2px solid white;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
   color: white;
 }
 
@@ -417,7 +433,13 @@ ul#feature-link li {
     font-size: 1.7rem;
     padding: 0;
     top: 15px;
+  }
 
+  .social-row {
+
+    top: 0;
+    margin-bottom: 50px;
+    }
   }
 
 
