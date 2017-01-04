@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $(".loader").fadeOut(1000);
+});
+
 
 
 $(document).ready(function() {
@@ -40,6 +44,6 @@ $(document).ready(function() {
   });
 
 
-  $(".loader").fadeOut(1000);
+
 
 });
