@@ -59,7 +59,7 @@ header h3 {
 #camera_menu_click {
   display: inline-block;
   margin: 20px 0 10px 0;
-  padding-right: 25px;
+  padding-right: 0;
   height: 37.5px;
   float: right;
 }
@@ -106,7 +106,7 @@ ol#menu li a {
 #menu_close {
   display: block;
   margin: 20px 0 10px 0;
-  padding-right: 25px;
+  padding-right: 0;
 
   height: 37.5px;
   float: right;
@@ -345,7 +345,7 @@ img.mail {
   float: right;
   position: relative;
   top: -50px;
-  right: 27px;
+  right: 2px;
   height: 35px;
 }
 
