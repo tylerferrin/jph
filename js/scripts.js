@@ -1,12 +1,10 @@
-$(window).load(function() {
-  $(".loader").fadeOut(1000);
-});
 
-
+$( window ).on("load", function() {
+        console.log( "window loaded" );
+        $(".loader").fadeOut(1000);
+    });
 
 $(document).ready(function() {
-
-
 
   $(".index-wrap").backstretch([
     "img/back2.jpg",
